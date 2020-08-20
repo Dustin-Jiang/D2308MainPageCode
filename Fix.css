@@ -1,0 +1,11 @@
+#warp > table {
+  width: 100%;
+}
+
+#warp {
+  min-width: unset !important;
+}
+
+.headDIV {
+  width: unset !important;
+}
