@@ -9,3 +9,14 @@
 .headDIV {
   width: unset !important;
 }
+
+#navgation ul li {
+	margin-left: 6px !important;
+	display: inline !important;
+	float: unset !important;
+	display: inline-block !important;
+}
+#navgation { 
+  width: unset !important;
+  float: unset !important;
+}
