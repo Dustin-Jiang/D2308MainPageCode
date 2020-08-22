@@ -1,3 +1,32 @@
+@font-face {
+  font-family: 'FZYaSong';
+  src: url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYaSongS-B-GB/FZYaSongS-B-GB.TTF") format("ttf"),
+  url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYaSongS-B-GB/FZYaSongS-B-GB.woff") format("woff"),
+  url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYaSongS-B-GB/FZYaSongS-B-GB.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'FZYaSong';
+  src: url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYaSongS-R-GB/FZYaSongS-R-GB.TTF") format("ttf"),
+  url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYaSongS-R-GB/FZYaSongS-R-GB.woff") format("woff"),
+  url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYaSongS-R-GB/FZYaSongS-R-GB.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'FZYouSong';
+  src: url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYouSongJS 505L/FZYouSongJS 505L.TTF") format("ttf"),
+  url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYouSongJS 505L/FZYouSongJS 505L.woff") format("woff"),
+  url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYouSongJS 505L/FZYouSongJS 505L.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'FZYouSong';
+  src: url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYouSongJS 509R/FZYouSongJS 509R.TTF") format("ttf"),
+  url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYouSongJS 509R/FZYouSongJS 509R.woff") format("woff"),
+  url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYouSongJS 509R/FZYouSongJS 509R.woff2") format("woff2");
+  font-weight: normal;
+}
+
 .classImg {
   width: 100%;
   transition-duration: 0.2s;
@@ -15,6 +44,15 @@
   box-shadow: 0 2px 6px 0 rgba(0,0,0,0.24),0 7px 10px 0 rgba(0,0,0,0.19);
   padding: 20px;
   max-width: 960px;
+  font-family: 'FZYouSong';
+}
+
+h1, h2, h3, h4, h5, h6, b {
+  font-family: 'FZYaSong';
+}
+
+h1, h2, h3, h4, b {
+  font-weight: bold;
 }
 
 .primaryColor {
