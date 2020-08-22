@@ -32,6 +32,7 @@
   transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
   margin: auto;
+  margin-bottom: 1rem;
 }
 .classImg:hover {
   transition-duration: 0.2s;
