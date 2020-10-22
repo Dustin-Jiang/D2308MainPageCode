@@ -1,0 +1,25 @@
+<div class="psgContainer">
+  <div class="numberContainer">
+    <span>今天的幸运观众是</span>
+    <div class="number primaryColor">∞</div>
+  </div>
+  <div class="startButton">
+    <button>抽取幸运观众!</button>
+  </div>
+  <a id="folderController" data-toggle="collapse" href="#folder">
+    <i class="ms-Icon ms-Icon--Add" aria-hidden="true"></i>
+    <span>设置</span>
+  </a>
+  <div class="folder collapse" id="folder">
+    <span>人数</span>
+    <input type="text" value="42" id="numberSelector" readonly="true">
+    <button id="plus">多点</button>
+    <button id="minus">少点</button>
+    <a id="folderController" data-toggle="collapse" href="#chooser">
+      <i class="ms-Icon ms-Icon--Add" aria-hidden="true"></i>
+      <span>想要哪些孩子?</span>
+    </a>
+    <div class="folder collapse" id="chooser">
+    </div>
+  </div>
+</div>

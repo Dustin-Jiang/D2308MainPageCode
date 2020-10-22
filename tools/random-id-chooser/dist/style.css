@@ -1,0 +1,72 @@
+button,
+input[type="text"] {
+  padding: 10px;
+  background-color: #ebebeb;
+  border: 3px solid #8a8a8a;
+  transition-duration: 0.2s;
+}
+button:hover,
+input[type="text"]:hover {
+  box-shadow: 0 0 10px 5px #c5c5c5;
+  background-color: #dedede;
+  border: 3px solid #696969;
+  transition-duration: 0.2s;
+}
+button:active {
+  transform: scale(0.95);
+  transition: 0.2s cubic-bezier(0.77, 0, 0.18, 1);
+}
+.numberContainer span {
+  color: #6e6e6e;
+}
+.numberContainer .number {
+  font-weight: 800;
+  font-size: 50px;
+}
+#folderController {
+  margin: 20px 0 0 0;
+  background-color: #f0f0f0;
+  font-size: 15px;
+  padding: 10px;
+  display: flex;
+  color: #000000;
+  text-decoration: none;
+  flex-direction: row;
+  align-item: center;
+}
+#folderController span {
+  margin: 0 0 0 5px;
+}
+#folderControllerOpen {
+  margin: 20px 0 0 0;
+  background-color: #f0f0f0;
+  font-size: 15px;
+  padding: 10px;
+  display: flex;
+  color: #000000;
+  text-decoration: none;
+  flex-direction: row;
+  align-item: center;
+}
+#folderControllerOpen span {
+  margin: 0 0 0 5px;
+}
+#folderControllerOpen i {
+  transform: rotate(90deg);
+}
+.folder {
+  padding: 10px 10px;
+  border: 3px solid #f0f0f0;
+}
+.folder span {
+  padding: 0 10px 0 0;
+}
+#chooser {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+#chooser input[type="checkbox"] {
+  height: 15px;
+  width: 15px;
+}
