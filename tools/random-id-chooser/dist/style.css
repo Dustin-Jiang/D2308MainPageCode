@@ -61,12 +61,11 @@ button:active {
 .folder span {
   padding: 0 10px 0 0;
 }
-#chooser {
+#chooser.show,
+#chooser.collapsing {
+  display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
-}
-#chooser .show {
-  display: grid;
 }
 #chooser input[type="checkbox"] {
   height: 15px;
