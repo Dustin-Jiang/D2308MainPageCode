@@ -60,9 +60,12 @@ button:active {
 }
 
 #chooser {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 10px;
+  &.show, &.collapsing {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+  }
+
   input[type="checkbox"] {
     @size: 15px;
     height: @size;
