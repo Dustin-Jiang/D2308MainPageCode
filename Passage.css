@@ -1,37 +1,27 @@
 @font-face {
   font-family: 'FZYaSong';
-  src: url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYaSongS-B-GB/FZYaSongS-B-GB.TTF") format("ttf"),
-  url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYaSongS-B-GB/FZYaSongS-B-GB.woff") format("woff"),
-  url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYaSongS-B-GB/FZYaSongS-B-GB.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYaSongS-B-GB/FZYaSongS-B-GB.TTF") format("ttf"), url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYaSongS-B-GB/FZYaSongS-B-GB.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYaSongS-B-GB/FZYaSongS-B-GB.woff2") format("woff2");
   font-weight: bold;
 }
 @font-face {
   font-family: 'FZYaSong';
-  src: url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYaSongS-R-GB/FZYaSongS-R-GB.TTF") format("ttf"),
-  url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYaSongS-R-GB/FZYaSongS-R-GB.woff") format("woff"),
-  url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYaSongS-R-GB/FZYaSongS-R-GB.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYaSongS-R-GB/FZYaSongS-R-GB.TTF") format("ttf"), url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYaSongS-R-GB/FZYaSongS-R-GB.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYaSongS-R-GB/FZYaSongS-R-GB.woff2") format("woff2");
   font-weight: normal;
 }
 @font-face {
   font-family: 'FZYouSong';
-  src: url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYouSongJS 505L/FZYouSongJS 505L.TTF") format("ttf"),
-  url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYouSongJS 505L/FZYouSongJS 505L.woff") format("woff"),
-  url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYouSongJS 505L/FZYouSongJS 505L.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYouSongJS 505L/FZYouSongJS 505L.TTF") format("ttf"), url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYouSongJS 505L/FZYouSongJS 505L.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYouSongJS 505L/FZYouSongJS 505L.woff2") format("woff2");
   font-weight: normal;
 }
 @font-face {
   font-family: 'FZYouSong';
-  src: url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYouSongJS 509R/FZYouSongJS 509R.TTF") format("ttf"),
-  url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYouSongJS 509R/FZYouSongJS 509R.woff") format("woff"),
-  url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYouSongJS 509R/FZYouSongJS 509R.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYouSongJS 509R/FZYouSongJS 509R.TTF") format("ttf"), url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYouSongJS 509R/FZYouSongJS 509R.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/FZYouSongJS 509R/FZYouSongJS 509R.woff2") format("woff2");
   font-weight: normal;
 }
 @font-face {
   font-family: 'FabricMDL2Icons';
-  src: url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/fabricmdl2icons/fabricmdl2icons.woff2") format("woff2"),
-  url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/fabricmdl2icons/fabricmdl2icons.ttf") format("ttf");
+  src: url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/fabricmdl2icons/fabricmdl2icons.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode/font/fabricmdl2icons/fabricmdl2icons.ttf") format("ttf");
 }
-
 .classImg {
   width: 100%;
   transition-duration: 0.2s;
@@ -42,29 +32,38 @@
 .classImg:hover {
   transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
-  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.24),0 7px 10px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.24), 0 7px 10px 0 rgba(0, 0, 0, 0.19);
 }
-
 .psgContainer {
   margin: 15px auto;
-  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.24),0 7px 10px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.24), 0 7px 10px 0 rgba(0, 0, 0, 0.19);
   padding: 20px;
   max-width: 960px;
   font-family: 'FZYouSong';
 }
-
-h1, h2, h3, h4, h5, h6, b {
+.psgContainer h1,
+.psgContainer h2,
+.psgContainer h3,
+.psgContainer h4,
+.psgContainer h5,
+.psgContainer h6,
+.psgContainer b {
   font-family: 'FZYaSong';
 }
-
-h1, h2, h3, h4, b {
+.psgContainer h1,
+.psgContainer h2,
+.psgContainer h3,
+.psgContainer h4,
+.psgContainer b {
   font-weight: bold;
 }
-
-h1, h2, h3, h4 {
+.psgContainer h1,
+.psgContainer h2,
+.psgContainer h3,
+.psgContainer h4 {
   margin-bottom: 1rem;
 }
-p {
+.psgContainer p {
   font-family: 'FZYouSong';
   font-size: 16px;
   line-height: 1.3;
@@ -72,11 +71,9 @@ p {
 .psgContainer img {
   width: 100%;
 }
-
 .primaryColor {
-  color: rgb(255, 85, 119);
+  color: #ff5577;
 }
-
 .icon {
   font-family: 'FabricMDL2Icons';
 }
