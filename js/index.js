@@ -103,7 +103,7 @@
 })();
 
 function loadHTML(){
-
+  return 0;
 }
 
 function initialize(){
