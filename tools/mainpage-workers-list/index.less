@@ -5,7 +5,8 @@
     }
   }
   .showcase {
-    font-family: 'FZYaSongS-B-GB';
+    font-family: 'FZYaSong';
+    font-weight: bold;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     li {
@@ -13,8 +14,11 @@
       font-size: 32px;
       font-weight: 800;
     }
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 900px){
       grid-template-columns: repeat(4, 1fr);
+    }
+    @media screen and (max-width: 550px){
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }

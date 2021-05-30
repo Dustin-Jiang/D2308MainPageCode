@@ -33,7 +33,7 @@ function getYearWeek(endDate) {
   //计算两个日期的天数差
   var millisDiff = endDate.getTime() - beginDate.getTime();
   var dayDiff = Math.floor((millisDiff + (beginWeek - endWeek) * (24 * 60 * 60 * 1000)) / 86400000);
-  return Math.ceil(dayDiff / 7);
+  return Math.ceil((dayDiff  + 1)/ 7); //Plus 1 to adapt Sunday-start week
 }
 
 $(document).ready(function () {

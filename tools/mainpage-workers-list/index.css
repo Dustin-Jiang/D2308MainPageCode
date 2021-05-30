@@ -12,8 +12,13 @@
   font-size: 32px;
   font-weight: 800;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   #homepage-workers-list .showcase {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 550px) {
+  #homepage-workers-list .showcase {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
