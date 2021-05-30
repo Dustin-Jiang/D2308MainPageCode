@@ -1,11 +1,19 @@
 #homepage-workers-list .psgContainer span {
   color: #6e6e6e;
 }
-#homepage-workers-list .psgContainer .number {
-  font-weight: 800;
-  font-size: 50px;
+#homepage-workers-list .showcase {
+  font-family: 'FZYaSong';
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
 }
 #homepage-workers-list .showcase li {
   list-style: none;
-  font-size: 22px;
+  font-size: 32px;
+  font-weight: 800;
+}
+@media screen and (max-width: 800px) {
+  #homepage-workers-list .showcase {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
