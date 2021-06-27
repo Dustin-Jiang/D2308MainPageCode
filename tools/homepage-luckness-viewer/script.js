@@ -252,7 +252,7 @@ fortunes = [
 ];
 
 $(document).ready(function(){
-  const pageSrc = 'https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode@HEAD/tools/mainpage-workers-list/index.html';
+  const pageSrc = 'https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode@HEAD/tools/homepage-luckness-viewer/index.html';
 
   var htmlXhr = new XMLHttpRequest();
   htmlXhr.addEventListener("load", function () {
