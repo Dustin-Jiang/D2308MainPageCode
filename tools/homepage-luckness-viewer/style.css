@@ -1,0 +1,46 @@
+.psgContainer#luckness {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+}
+.psgContainer#luckness hr {
+  display: none;
+  visibility: hidden;
+}
+@media screen and (max-width: 720px) {
+  .psgContainer#luckness {
+    flex-wrap: wrap;
+  }
+  .psgContainer#luckness hr {
+    display: block;
+    visibility: visible;
+  }
+}
+.psgContainer#luckness .warning {
+  position: absolute;
+  bottom: 20px;
+}
+@media screen and (max-width: 720px) {
+  .psgContainer#luckness .warning {
+    position: relative;
+    bottom: unset;
+  }
+}
+.psgContainer span {
+  color: #6e6e6e;
+}
+.psgContainer .divide {
+  width: 100%;
+}
+.psgContainer .divide li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 30px;
+  font-weight: 800;
+  font-family: 'FZYaSong';
+}
+.psgContainer .luckness.main {
+  font-weight: 800;
+  font-size: 50px;
+  font-family: 'FZYaSong';
+}
