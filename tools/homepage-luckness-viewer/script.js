@@ -259,9 +259,7 @@ $(document).ready(function(){
     if (htmlXhr.status === 200) {
       var element = $("#homepage-luckness-viewer")[0];
       element.innerHTML = htmlXhr.responseText;
-
-      htmlXhr.open('GET', pageSrc);
-      htmlXhr.send();
+      
       var d = new Date();
       var n = '';
       n += d.getFullYear();
