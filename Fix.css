@@ -66,3 +66,14 @@ font.middle {
 #AutoNumber4 > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > div:nth-child(1) {
   width: unset !important;
 }
+
+
+/* default.css | https://www.nbxiaoshi.net/dzbp_banjizhuye/css/default.css */
+/* Change to get white background color and text left align */
+.content {
+  text-align: unset !important;
+}
+
+.content .content_article {
+  background: unset !important;
+}
