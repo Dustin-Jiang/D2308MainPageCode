@@ -271,9 +271,10 @@ $(document).ready(function(){
 
       n = rand(n);
       console.log(n);
-      if (n < 0.15) {
+      if(n < 0.15) {
         //大凶
         $(".luckness.main")[0].innerText = "大凶";
+        $(".divide li")[0].innerText = "诸事不宜";
       } else if (n < 0.4) {
         //小凶
         $(".luckness.main")[0].innerText = "小凶";
@@ -289,6 +290,7 @@ $(document).ready(function(){
       } else {
         //大吉
         $(".luckness.main")[0].innerText = "大吉";
+        $(".divide li")[0].innerText = "诸事皆宜";
       }
     }
   });
@@ -313,11 +315,11 @@ function randomFortune(n) {
     n = rand(Math.floor(n * 1000000));
   }
   for(i in index){
-    $(".divide li")[i].innerText = fortunes[i]["activity"];
+    $(".divide li")[i].innerText = fortunes[index[i]]["activity"];
     if(i < 3) {
-      $(".divide .saying")[i].innerText = fortunes[i]["good"];
+      $(".divide .saying")[i].innerText = fortunes[index[i]]["good"];
     } else {
-      $(".divide .saying")[i].innerText = fortunes[i]["bad"];
+      $(".divide .saying")[i].innerText = fortunes[index[i]]["bad"];
     }
   }
 }
