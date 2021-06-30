@@ -311,7 +311,7 @@ function rand(seed){
 function randomFortune(n) {
   index = [];
   for(i=0;i<6;i++) {
-    index.push(Math.ceil(fortunes.length * n));
+    index.push(Math.floor(fortunes.length * n));
     n = rand(Math.floor(n * 1000000));
   }
   for(i in index){
