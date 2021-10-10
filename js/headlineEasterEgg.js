@@ -5,7 +5,7 @@ $(document).ready(function() {
     $("#headline-easter-egg")[0].onclick = function() {
         click += 1;
         if (click >= clickTime) {
-            alert()
+            displayEasterEgg()
         }
         setTimeout(function() {
             click = 0
