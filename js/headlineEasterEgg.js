@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    clickTime = 5
+    clickTime = 10
     timeout = 500
     click = 0
     $("#headline-easter-egg")[0].onclick = function() {
@@ -17,9 +17,11 @@ function displayEasterEgg() {
     model = $(".model-hidden")[0]
     model.classList.add("model");
     model.classList.remove("model-hidden");
-    model.onclick = function() {
-        model = $(".model")[0]
-        model.classList.add("model-hidden");
-        model.classList.remove("model")
-    }
+    setTimeout(function() {
+        model.onclick = function() {
+            model = $(".model")[0]
+            model.classList.add("model-hidden");
+            model.classList.remove("model")
+        }
+    }, 1000)
 }
