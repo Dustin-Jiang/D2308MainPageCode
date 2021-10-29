@@ -252,50 +252,38 @@ fortunes = [
 ];
 
 $(document).ready(function(){
-  const pageSrc = 'https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode@HEAD/tools/homepage-luckness-viewer/index.html';
-
-  var htmlXhr = new XMLHttpRequest();
-  htmlXhr.addEventListener("load", function () {
-    if (htmlXhr.status === 200) {
-      var element = $("#homepage-luckness-viewer")[0];
-      element.innerHTML = htmlXhr.responseText;
-      
-      var d = new Date();
-      var n = '';
-      n += d.getFullYear();
-      if ((d.getMonth() + 1) < 10) {
-        n += '0';
-      }
-      n += d.getMonth() + 1;
-      n += d.getDate();
-
-      n = rand(n);
-      console.log(n);
-      if(n < 0.15) {
-        //大凶
-        $(".luckness.main")[0].innerText = "大凶";
-        $(".divide li")[0].innerText = "诸事不宜";
-      } else if (n < 0.4) {
-        //小凶
-        $(".luckness.main")[0].innerText = "小凶";
-        randomFortune(n);
-      } else if (n < 0.6) {
-        //中平
-        $(".luckness.main")[0].innerText = "中平";
-        randomFortune(n);
-      } else if (n < 0.85) {
-        //小吉
-        $(".luckness.main")[0].innerText = "小吉";
-        randomFortune(n);
-      } else {
-        //大吉
-        $(".luckness.main")[0].innerText = "大吉";
-        $(".divide li")[0].innerText = "诸事皆宜";
-      }
-    }
-  });
-  htmlXhr.open('GET', pageSrc);
-  htmlXhr.send();
+  var d = new Date();
+  var n = '';
+  n += d.getFullYear();
+  if ((d.getMonth() + 1) < 10) {
+    n += '0';
+  }
+  n += d.getMonth() + 1;
+  n += d.getDate();
+  
+  n = rand(n);
+  console.log(n);
+  if(n < 0.15) {
+    //大凶
+    $(".luckness.main")[0].innerText = "大凶";
+    $(".divide li")[0].innerText = "诸事不宜";
+  } else if (n < 0.4) {
+    //小凶
+    $(".luckness.main")[0].innerText = "小凶";
+    randomFortune(n);
+  } else if (n < 0.6) {
+    //中平
+    $(".luckness.main")[0].innerText = "中平";
+    randomFortune(n);
+  } else if (n < 0.85) {
+    //小吉
+    $(".luckness.main")[0].innerText = "小吉";
+    randomFortune(n);
+  } else {
+    //大吉
+    $(".luckness.main")[0].innerText = "大吉";
+    $(".divide li")[0].innerText = "诸事皆宜";
+  }
 });
 
 function rand(seed){
@@ -311,15 +299,17 @@ function rand(seed){
 function randomFortune(n) {
   index = [];
   for(i=0;i<6;i++) {
-    index.push(Math.floor(fortunes.length * n));
-    n = rand(Math.floor(n * 1000000));
+    fortune = Math.floor(fortunes.length * n);
+    index.push(fortunes[fortune]);
+    fortunes.pop(Math.floor(fortunes.length * n));
+    n = rand(Math.floor(n * 1234567));
   }
   for(i in index){
-    $(".divide li")[i].innerText = fortunes[index[i]]["activity"];
+    $(".divide li")[i].innerText = index[i]["activity"]
     if(i < 3) {
-      $(".divide .saying")[i].innerText = fortunes[index[i]]["good"];
+      $(".divide .saying")[i].innerText = index[i]["good"];
     } else {
-      $(".divide .saying")[i].innerText = fortunes[index[i]]["bad"];
+      $(".divide .saying")[i].innerText = index[i]["bad"];
     }
   }
 }
