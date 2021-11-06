@@ -251,7 +251,7 @@ fortunes = [
   }
 ];
 
-$(document).ready(function(){
+$(document).ready(function () {
   const pageSrc = 'https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode@HEAD/tools/homepage-luckness-viewer/index.html';
 
   var htmlXhr = new XMLHttpRequest();
@@ -259,7 +259,7 @@ $(document).ready(function(){
     if (htmlXhr.status === 200) {
       var element = $("#homepage-luckness-viewer")[0];
       element.innerHTML = htmlXhr.responseText;
-      
+
       var d = new Date();
       var n = '';
       n += d.getFullYear();
@@ -271,7 +271,7 @@ $(document).ready(function(){
 
       n = rand(n);
       console.log(n);
-      if(n < 0.15) {
+      if (n < 0.15) {
         //大凶
         $(".luckness.main")[0].innerText = "大凶";
         $(".divide li")[0].innerText = "诸事不宜";
@@ -298,7 +298,7 @@ $(document).ready(function(){
   htmlXhr.send();
 });
 
-function rand(seed){
+function rand(seed) {
   n = seed * seed;
   p = n % 10000000;
   a = Math.floor(p / 10000);
@@ -310,16 +310,18 @@ function rand(seed){
 
 function randomFortune(n) {
   index = [];
-  for(i=0;i<6;i++) {
-    index.push(Math.floor(fortunes.length * n));
-    n = rand(Math.floor(n * 1000000));
+  for (i = 0; i < 6; i++) {
+    fortune = Math.floor(fortunes.length * n);
+    index.push(fortunes[fortune]);
+    fortunes.pop(Math.floor(fortunes.length * n));
+    n = rand(Math.floor(n * 1234567));
   }
-  for(i in index){
-    $(".divide li")[i].innerText = fortunes[index[i]]["activity"];
-    if(i < 3) {
-      $(".divide .saying")[i].innerText = fortunes[index[i]]["good"];
+  for (i in index) {
+    $(".divide li")[i].innerText = index[i]["activity"]
+    if (i < 3) {
+      $(".divide .saying")[i].innerText = index[i]["good"];
     } else {
-      $(".divide .saying")[i].innerText = fortunes[index[i]]["bad"];
+      $(".divide .saying")[i].innerText = index[i]["bad"];
     }
   }
 }

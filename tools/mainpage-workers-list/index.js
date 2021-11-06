@@ -1,25 +1,10 @@
 const memberTable = [
-  [
-    "丁林叶", "黄熠", "刘嘉", "苏一诺", "王诗如", "张佳宁"
-  ],
-  [
-    "陈佳熠", "黄楚淇", "李朔瑜", "宋天逸", "王乐怡", "徐佳宁"
-  ],
-  [
-    "蔡昊峰", "陈南澄", "丁鹏轶", "蒋涛涛", "吴心宇", "赵伟杰"
-  ],
-  [
-    "戈涵", "姜欣宜", "彭可", "孙毓谦", "王艺霖", "章益萌"
-  ],
-  [
-    "胡高源", "李佳艺", "史晶盈", "王可圆", "吴沁纯", "郑旖馨"
-  ],
-  [
-    "胡晨悦", "孔烨容", "任思琪", "王涵双", "王昱涵", "郑广渔"
-  ],
-  [
-    "陈嘉顺", "陈旭楠", "蒋浩天", "吴东明", "叶思源", "周涛"
-  ]
+  ["丁林叶","王昱涵","姜欣宜","戈涵","郑旖馨","胡高源","苏一诺"],
+  ["黄楚淇","彭可","史晶盈","孙毓谦","孔烨容","胡晨悦","王诗如"],
+  ["吴沁纯","王可圆","王涵双","任思琪","刘嘉","李佳艺","王乐怡"],
+  ["郑广渔","陈佳熠","黄熠","李朔瑜","王艺霖","章益萌","张佳宁"],
+  ["陈旭楠","陈南澄","蔡昊峰","吴东明","宋天逸","陈嘉顺","徐佳宁"],
+  ["丁鹏轶","周涛","叶思源","蒋涛涛","吴心宇","蒋浩天","赵伟杰"]
 ];
 
 function getYearWeek(endDate) {
@@ -37,8 +22,8 @@ function getYearWeek(endDate) {
 $(document).ready(function () {
   const d = new Date();
   const weekNumber = getYearWeek(d);
-  const groupSize = 6;
-  const magicNumber = 2;
+  const groupSize = 7;
+  const magicNumber = 6;
   const group = (weekNumber + magicNumber) % groupSize;
   const pageSrc = 'https://cdn.jsdelivr.net/gh/Dustin-Jiang/D2308MainPageCode@HEAD/tools/mainpage-workers-list/index.html'
 

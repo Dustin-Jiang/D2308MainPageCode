@@ -77,3 +77,25 @@
 .icon {
   font-family: 'FabricMDL2Icons';
 }
+
+.model {
+  background: rgba(0,0,0,0.3);
+  display: block;
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 200px;
+}
+.model-hidden {
+  display: none;
+  visibility: hidden;
+}
+.model > div {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.24), 0 7px 10px 0 rgba(0, 0, 0, 0.19);
+}
