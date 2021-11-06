@@ -1,0 +1,63 @@
+.psgContainer {
+  --primary-color: #ff5577;
+  span {
+    color: #6e6e6e;
+  }
+  .switch {
+    display: flex;
+    margin-bottom: 10px;
+    .switcher {
+      cursor: pointer;
+      padding: 10px 20px;
+      &.selected {
+        font-weight: 800;
+        border-bottom: 3px solid var(--primary-color);
+        color: var(--primary-color)
+      }
+    }
+  }
+  .score {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @media (max-width: 960px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 600px) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    row-gap: 10px;
+    column-gap: 15px;
+    .game{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .pointContainer {
+      width: 80px;
+      &:nth-child(1) {
+        text-align: right;
+      }
+      .bigger {
+        color: var(--primary-color);
+      }
+    }
+    .statusContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+    }
+    .scoreContainer {
+      display: flex;
+      font-family: 'FZYaSong';
+      font-weight: 800;
+    }
+    &.hidden {
+      visibility: hidden;
+      display: none;
+    }
+  }
+}

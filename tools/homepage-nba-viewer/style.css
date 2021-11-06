@@ -1,0 +1,67 @@
+.psgContainer {
+  --primary-color: #ff5577;
+}
+.psgContainer span {
+  color: #6e6e6e;
+}
+.psgContainer .switch {
+  display: flex;
+  margin-bottom: 10px;
+}
+.psgContainer .switch .switcher {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.psgContainer .switch .switcher.selected {
+  font-weight: 800;
+  border-bottom: 3px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.psgContainer .score {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px;
+  column-gap: 15px;
+}
+@media (max-width: 960px) {
+  .psgContainer .score {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .psgContainer .score {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.psgContainer .score .game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.psgContainer .score .pointContainer {
+  width: 80px;
+}
+.psgContainer .score .pointContainer:nth-child(1) {
+  text-align: right;
+}
+.psgContainer .score .pointContainer .bigger {
+  color: var(--primary-color);
+}
+.psgContainer .score .statusContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+}
+.psgContainer .score .scoreContainer {
+  display: flex;
+  font-family: 'FZYaSong';
+  font-weight: 800;
+}
+.psgContainer .score.hidden {
+  visibility: hidden;
+  display: none;
+}
