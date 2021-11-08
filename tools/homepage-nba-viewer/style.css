@@ -46,6 +46,9 @@
 .psgContainer .score .pointContainer:nth-child(1) {
   text-align: right;
 }
+.psgContainer .score .pointContainer .number {
+  letter-spacing: -0.1rem;
+}
 .psgContainer .score .pointContainer .bigger {
   color: var(--primary-color);
 }
